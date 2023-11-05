@@ -1,0 +1,164 @@
+:root {
+    --clr-primary-1: hsl(224, 35%, 11%);
+    --clr-primary-2: rgb(43, 51, 74);
+    --clr-primary-3: hsl(225, 21%, 45%);
+    --clr-secondary-1: hsl(0, 0%, 100%);
+    --clr-secondary-2: hsl(225, 40%, 83%);
+    --clr-accent-1: hsl(157, 74%, 62%);
+    --clr-accent-2: hsl(157, 100%, 85%); 
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* utils */
+body {
+    background-color: var(--clr-primary-1);
+    color: var(--clr-secondary-1);
+    font-size: .9375rem;
+    line-height: 1.667;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 100;
+}
+
+source {
+    position: absolute;
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 1.625rem;
+    line-height: 1.461538461538462;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.grid {
+    max-width: 31.25rem;
+    margin-inline: auto;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding-inline: 1.5rem;
+    padding-block-start: 3.875rem;
+    gap: 3.5625rem;
+}
+
+.grid__image-host {
+    position: absolute;
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+picture > img {
+    object-fit: cover;
+    object-position: 0 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid__main {
+    display: grid;
+    gap: 2.0625rem;
+}
+
+.grid__main__content {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid__main__title span {
+    color: var(--clr-accent-1);
+}
+
+.grid__main__bottom {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid__main__bottom__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.grid__main__bottom__form {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid__main__bottom__form input{
+    border-radius: 999em;
+    border-style: none;
+    padding-inline: 2rem;
+    padding-block: .875rem;
+    font-size: .875rem;
+    font-weight: bold;
+    outline: none;
+    background-color: var(--clr-primary-2);
+    color: inherit;
+}
+
+.grid__main__bottom__form input[type="submit"]{
+    cursor: pointer;
+    background-color: var(--clr-accent-1);
+    color: var(--clr-primary-1);
+}
+
+.grid__main__bottom__form input[type="submit"]:hover{
+    background-color: var(--clr-accent-2);
+}
+
+/* .grid__main__bottom__socials img {
+    border: 1px solid red;
+} */
+/*     
+* {
+    border: 1px solid red;
+}  */
+
+/* grid */
