@@ -11,7 +11,7 @@ This is a solution to the [Pod request access landing page challenge on Frontend
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
